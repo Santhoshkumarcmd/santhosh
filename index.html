@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<head>
+<body>
+   <div class="header">
+    <nav>
+        <h1 class="titlebar">Image gallary</h1>
+        <u1>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </u1>
+    </nav><center>    
+        <div class="searchbar">
+            <input type="text"  placeholder="search">
+            <button type="submit"><i class="fa-brands fa-searchengin"></i></button>
+        </div></center>
+        <div id="FullImgBox">
+            <img id="FullImg"/>
+            <span id="closebutton" onclick="CloseFullImg()">&times;</span>
+        </div><center>
+        <p class="description">A collection of images Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste natus tempora veritatis vel quis cum, neque nemo corrupti animi repudiandae nostrum obcaecati dolores eveniet laudantium blanditiis atque a quas! Tenetur? </p></center>
+        <!--flex image-container-->
+        <div class="img-gallary">
+            <div>
+                <p>Homes are places where people live and work</p>
+                <a target="_blank"href="images/home.jpg">
+                    <img src="images/home.jpg" alt="home" onclick="OpenFullImg(this.src)"/>
+                </a> 
+            </div>
+            <div>
+                <p>Beaches are sandy areas near shorelines where sand, water, and coral form a body of water</p>
+                <a target="_blank" href="images/beach.jpg">
+                    <img src="images/beach.jpg" alt="beach" onclick="OpenFullImg(this.src)"/>
+                </a>
+            </div>
+            <div>
+                <p>Butterflies are fascinating insects known for their vibrant colors and delicate wings</p>
+                <a target="_blank" href="images/butterfly.jpg">
+                    <img src="images/butterfly.jpg" alt="butterfly" onclick="OpenFullImg(this.src)"/>
+                </a>
+            </div>
+            <div>
+                <p>Flowers are beautiful and often used in decorations and artwork</p>
+                <a target="_blank" href="images/flower.jpg">
+                    <img src="images/flower.jpg" alt="flower" onclick="OpenFullImg(this.src)"/>
+                </a> 
+            </div>
+            <div>
+                <p>Mountains are high peaks of land, often covered in snow</p>
+                <a target="_blank" href="images/mountain.jpg">
+                    <img src="images/mountain.jpg" alt="mountain" onclick="openFullImg(this.src)"/>
+                </a>
+            </div>
+            <div>
+                <p>Oceans are vast bodies of water surrounded by land</p>
+                <a target="_blank" href="images/ocean.jpg">
+                    <img src="images/ocean.jpg" alt="ocean" onclick="OpenFullImg(this.src)"/>
+                </a>
+            </div>
+            <div>
+                <p>Sky is a vast expanse of blue and green, often filled with clouds</p>
+                <a target="_blank" href="images/sky.jpg">
+                    <img src="images/sky.jpg" alt="sky" onclick="OpenFullImg(this.src)"/>
+                </a>
+            </div>
+            <div>
+                <p>Trees are tall and strong, providing shelter and food for many animals</p>
+                <a target="_blank" href="images/tree.jpg">
+                    <img src="images/tree.jpg" alt="tree" onclick="OpenFullImg(this.src)"/>
+                </a>
+            </div>
+            <div>
+                <p>Wildlife is a diverse group of animals that live in various habitats</p>
+                <a target="_blank" href="images/waterfall.jpg">
+                    <img src="images/waterfall.jpg" alt="waterfall" onclick="OpenFullImg(this.src)"/>
+                </a>
+            </div>
+            <div>
+                <p>Wood is a durable and flexible material, often used in construction and crafts</p>
+                <a target="_blank" href="images/wood.jpg">
+                    <img src="images/wood.jpg" alt="wood"onclick="OpenFullImg(this.src)"/>
+                </a>
+            </div>
+            <script type="text/javascript">
+                function OpenFullImg(ImgLink){
+                    document.getElementById("FullImg").src=ImgLink;
+                    document.getElementById("FullImgBox").style.display="flex";
+                }
+                function CloseFullImg(){
+                    document.getElementById("FullImgBox").style.display="none";
+                }
+            </script>
+        </div>    
+        <div class="About ">
+            <h2>about us</h2>
+            <p> We love hearing from our customers! If you have any questions, feedback, or Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum odio ad sed cumque provident velit voluptas at, placeat quam enim dolores doloribus est quis architecto corrupti maxime, eaque eum consequatur! just want to say hello, feel free to reach out to us at [contact information].</p>
+        </div>
+            <hr />
+        <div class="contact">   
+            <h3>contact us</h3>
+            <p>thus the website for free.build your website and grow your business</p>
+            <p>Email: <a href="mailto:sk0661527@gmail.com">sk0661527@gmail.com</a></p>
+            <p>Phone: +1-123-456-7890</p>
+        </div>
+            </center>
+        </div>
+    </div>
+</body>    
+    
+
+    
+
+        
+
+
+
+
+</html>
